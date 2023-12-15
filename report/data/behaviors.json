@@ -1,0 +1,41 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "针对单个接口的测试",
+    "children" : [ {
+      "name" : "获取agent信息模块",
+      "children" : [ {
+        "name" : "用例--获取全部agent信息",
+        "children" : [ {
+          "name" : "test_get_all_agent_info[data0-True-0]",
+          "uid" : "20630a7bd3ea9c20",
+          "parentUid" : "a421f131eff624049ace88cdae35344d",
+          "status" : "failed",
+          "time" : {
+            "start" : 1702628252734,
+            "stop" : 1702628253147,
+            "duration" : 413
+          },
+          "flaky" : false,
+          "parameters" : [ "{'size': 10, 'current': 1, 'query': {'isAll': True}}", "0", "True" ]
+        }, {
+          "name" : "test_get_all_agent_info[data1-True-0]",
+          "uid" : "33432621122a23c8",
+          "parentUid" : "a421f131eff624049ace88cdae35344d",
+          "status" : "failed",
+          "time" : {
+            "start" : 1702628253506,
+            "stop" : 1702628253807,
+            "duration" : 301
+          },
+          "flaky" : false,
+          "parameters" : [ "{'size': 20, 'current': 2, 'query': {'isAll': True}}", "0", "True" ]
+        } ],
+        "uid" : "a421f131eff624049ace88cdae35344d"
+      } ],
+      "uid" : "790aa56567ced07256d726c6fcf72a3f"
+    } ],
+    "uid" : "6b8f2f790c75a706c4fafda03d54caa6"
+  } ]
+}

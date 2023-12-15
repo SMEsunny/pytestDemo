@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Fri Dec 15 16:17:33 CST 2023","Fri Dec 15 16:17:33 CST 2023","301","testcases.api_test","test_agent_info","TestGetAgentInfo","","","test_get_all_agent_info[data1-True-0]","该用例是针对获取所有agent信息接口的测试"
+"failed","Fri Dec 15 16:17:32 CST 2023","Fri Dec 15 16:17:33 CST 2023","413","testcases.api_test","test_agent_info","TestGetAgentInfo","","","test_get_all_agent_info[data0-True-0]","该用例是针对获取所有agent信息接口的测试"

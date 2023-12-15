@@ -1,0 +1,21 @@
+[ {
+  "uid" : "33432621122a23c8",
+  "name" : "test_get_all_agent_info[data1-True-0]",
+  "time" : {
+    "start" : 1702628253506,
+    "stop" : 1702628253807,
+    "duration" : 301
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "20630a7bd3ea9c20",
+  "name" : "test_get_all_agent_info[data0-True-0]",
+  "time" : {
+    "start" : 1702628252734,
+    "stop" : 1702628253147,
+    "duration" : 413
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

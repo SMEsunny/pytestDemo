@@ -32,3 +32,4 @@ logger = Logger().logger
 if __name__ == '__main__':
     logger.info("---测试开始---")
     logger.debug("---测试结束---")
+

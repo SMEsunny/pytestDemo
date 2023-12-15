@@ -1,0 +1,41 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcases.api_test",
+    "children" : [ {
+      "name" : "test_agent_info",
+      "children" : [ {
+        "name" : "TestGetAgentInfo",
+        "children" : [ {
+          "name" : "test_get_all_agent_info[data0-True-0]",
+          "uid" : "20630a7bd3ea9c20",
+          "parentUid" : "6a658e5f9a44c2a11a6e5ac17d74575d",
+          "status" : "failed",
+          "time" : {
+            "start" : 1702628252734,
+            "stop" : 1702628253147,
+            "duration" : 413
+          },
+          "flaky" : false,
+          "parameters" : [ "{'size': 10, 'current': 1, 'query': {'isAll': True}}", "0", "True" ]
+        }, {
+          "name" : "test_get_all_agent_info[data1-True-0]",
+          "uid" : "33432621122a23c8",
+          "parentUid" : "6a658e5f9a44c2a11a6e5ac17d74575d",
+          "status" : "failed",
+          "time" : {
+            "start" : 1702628253506,
+            "stop" : 1702628253807,
+            "duration" : 301
+          },
+          "flaky" : false,
+          "parameters" : [ "{'size': 20, 'current': 2, 'query': {'isAll': True}}", "0", "True" ]
+        } ],
+        "uid" : "6a658e5f9a44c2a11a6e5ac17d74575d"
+      } ],
+      "uid" : "fe2e4fc26f4ee15eec367c7f39b4a08a"
+    } ],
+    "uid" : "52dad69cd27896a2cec5dbc357097398"
+  } ]
+}
