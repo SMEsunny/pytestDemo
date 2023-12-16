@@ -1,5 +1,4 @@
 import pytest
-import sys
 import allure
 from operation.agent import get_all_agent
 from testcases.conftest import api_data

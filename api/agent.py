@@ -7,10 +7,10 @@ data_file_path = os.path.join(BASE_PATH, "config", "setting.ini")
 api_root_url = data.load_ini(data_file_path)["host"]["api_root_url"]
 
 
-class Login(RestClient):
+class Agent(RestClient):
 
     def __init__(self, api_root_url, **kwargs):
-        super(Login, self).__init__(api_root_url, **kwargs)
+        super(Agent, self).__init__(api_root_url, **kwargs)
 
     def list_all_agents(self, **kwargs):
         return self.post("/api/app/agent/info/manage/page/list", **kwargs)

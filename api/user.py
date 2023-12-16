@@ -33,7 +33,3 @@ class User(RestClient):
 
 
 user = User(api_root_url)
-if __name__ == "__main__":
-    print(BASE_PATH)
-    print(data_file_path)
-    print(api_root_url)

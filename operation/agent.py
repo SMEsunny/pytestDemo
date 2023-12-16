@@ -12,7 +12,7 @@ def get_all_agent(size=10,current=1,query={}):
     
     headers = {
         "CLIENT-TOC":"Y",
-        "Authorization":"Bearer 77156b36-6fe8-4f97-9a6b-386fb28f31d2"
+        "Authorization":"Bearer a1c03413-d876-4718-aeee-5431481da52b"
     }
     json = {
         "size":size,
