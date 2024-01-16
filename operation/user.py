@@ -1,6 +1,53 @@
 from core.result_base import ResultBase
 from api.user import user
 from common.logger import logger
+from common.util import get_dynamic_headers
+
+
+
+
+def get_code(phone):
+    """
+    使用手机号获取验证码
+    :param phone: 手机号
+    :return: 自定义的关键字返回结果 result
+    """
+    result = ResultBase()
+    dynamic_headers =get_dynamic_headers()
+    headers = {
+        "Authorization":"Basic YXBwOmFwcA==",
+        "CLIENT-TOC":"Y",
+        "abc12":dynamic_headers["abc12"],
+        "aee":dynamic_headers["aee"],
+        "timeStamp":dynamic_headers["timeStamp"]
+    }
+    params = {"randomStr":"blockPuzzle",
+              "grant_type":"password"}
+    res = user.get_code(phone,params = params,headers = headers)
+    return result.handle_response(res)
+  
+
+def login(phone,code):
+    """
+    使用验证码登录
+    :param code: 验证码
+    :return: 自定义的关键字返回结果 result
+    """
+    result = ResultBase()
+    dynamic_headers =get_dynamic_headers()
+    headers = {
+        "Authorization":"Basic YXBwOmFwcA==",
+        "CLIENT-TOC":"Y",
+        "abc12":dynamic_headers["abc12"],
+        "aee":dynamic_headers["aee"],
+        "timeStamp":dynamic_headers["timeStamp"]
+    }
+    params = {"mobile":"APP-SMS@"+phone,
+              "grant_type":"mobile",
+              "code":code,
+              "scope":"server"}
+    res = user.login(params = params,headers = headers)    
+    return result.handle_login_response(res)
 
 
 def get_all_user_info():

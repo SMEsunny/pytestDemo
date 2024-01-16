@@ -3,7 +3,8 @@ from  common.read_data import data
 
 
 class DataProvider:
-    
+    api_root_url = ""
+    data = {}
     #从指定目录中将配置文件加载进字典中
     def load_data_from_dir(self,paths):
         #获得文件列表
@@ -69,10 +70,4 @@ class DataProvider:
                             files_list.append(file_path)
 
         return files_list
-    
-    
-if __name__ == "__main__":
-    data_provider = DataProvider()
-    # print(data_provider.get_all_files(["/data","/config"]))
-    print(data_provider.load_data_from_dir("/config"))
-    data_provider.get_data("/config/setting")
+

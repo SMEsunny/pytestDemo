@@ -39,6 +39,13 @@
 test_get_all_agent_info:
   #查询参数,期望结果
   # data, except_result, except_code
-  - [{"size":10,"current":1,"query":{"isAll":true}},True,0]
-  - [{"size":20,"current":2,"query":{"isAll":true}},True,0]
+  - [{"size":16,"current":1,"query":{"searchContent":"","isAll":true,"tagNo":"","from":1,"current":1,"size":16}},True,0]
+  # - [{"size":20,"current":2,"query":{"searchContent":"","isAll":true,"tagNo":"","from":1,"current":1,"size":16}},True,0]
   
+test_get_code:
+  #查询参数,期望结果
+  # phone, except_result, except_code,status_code
+  - ["18500000000",True,0,200]
+  - ["",False,1,424]
+  - ["18646",False,1,200]
+  - ["xxxx",False,1,200]

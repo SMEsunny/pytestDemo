@@ -13,7 +13,7 @@ class Agent(RestClient):
         super(Agent, self).__init__(api_root_url, **kwargs)
 
     def list_all_agents(self, **kwargs):
-        return self.post("/api/app/agent/info/manage/page/list", **kwargs)
+        return self.post("/api/bbs/front/agent/info/square/page/list", **kwargs)
     
 
 agent = Agent(api_root_url)

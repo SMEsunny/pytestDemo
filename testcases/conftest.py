@@ -1,10 +1,11 @@
 import pytest
 import os
 # import allure
-from api.user import user
 # from common.mysql_operate import db
 from common.read_data import data
 from common.logger import logger
+from common.util import generate_phone_number
+from operation.user import get_code,login
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
@@ -19,9 +20,15 @@ def get_data(yaml_file_name):
         return yaml_data
 
 
-# base_data = get_data("base_data.yml")
+base_data = get_data("base_data.yml")
 api_data = get_data("api_test_data.yml")
-# scenario_data = get_data("scenario_test_data.yml")
+scenario_data = get_data("scenario_test_data.yml")
+
+
+    
+
+
+
 
 
 # @allure.step("前置步骤 ==>> 清理数据")
@@ -40,20 +47,13 @@ api_data = get_data("api_test_data.yml")
 #     logger.info("前置步骤 ==>> 管理员 {} 登录，返回信息 为：{}".format(username, password))
 
 
-# @pytest.fixture(scope="session")
-# def login_fixture():
-#     username = base_data["init_admin_user"]["username"]
-#     password = base_data["init_admin_user"]["password"]
-#     header = {
-#         "Content-Type": "application/x-www-form-urlencoded"
-#     }
-#     payload = {
-#         "username": username,
-#         "password": password
-#     }
-#     loginInfo = user.login(data=payload, headers=header)
-#     step_login(username, password)
-#     yield loginInfo.json()
+@pytest.fixture(scope="session")
+def login_fixture():
+    phone = generate_phone_number()
+    result = get_code(phone)
+    code = result.data
+    result = login(phone,code)
+    return result.data
 
 
 # @pytest.fixture(scope="function")

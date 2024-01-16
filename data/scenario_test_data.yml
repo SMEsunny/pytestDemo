@@ -79,3 +79,6 @@ test_user_register_login_delete_fail:
   except_result: False
   except_code: 3004
   except_msg: "当前用户不是管理员用户"
+
+  test_user_getcode_login:
+    phone: 18300011111
