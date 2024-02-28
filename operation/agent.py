@@ -27,4 +27,17 @@ def get_all_agent(size=16,current=1,query={},token=""):
     return result.handle_response(res)
 
 
+def init_agent(headers,type):
+    """
+    初始化智能体
+    :return: 自定义的关键字返回结果 result
+    """
+    result = ResultBase()
+    json = {
+        "type":type
+    }
+    res = agent.init_agent(headers=headers,json = json)
+    return result.handle_response(res)
+
+
 

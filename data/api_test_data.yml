@@ -49,3 +49,9 @@ test_get_code:
   - ["",False,1,424]
   - ["18646",False,1,200]
   - ["xxxx",False,1,200]
+
+
+test_init_agent:
+  #查询参数,期望结果
+  # type, except_result, except_code,status_code
+  - ["1",True,0,200]

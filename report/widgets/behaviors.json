@@ -1,13 +1,13 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "6b8f2f790c75a706c4fafda03d54caa6",
-    "name" : "针对单个接口的测试",
+    "uid" : "88c449542cebe03afaa3970b050af4a2",
+    "name" : "测试",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }

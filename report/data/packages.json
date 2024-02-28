@@ -2,32 +2,20 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcases.api_test.test_agent_info",
+    "name" : "testcases.api_test.agent.test_agent",
     "children" : [ {
-      "name" : "test_get_all_agent_info[data0-True-0]",
-      "uid" : "20630a7bd3ea9c20",
-      "parentUid" : "20b160e69b4703a3568bceb2501bc8d9",
-      "status" : "failed",
+      "name" : "test_init_agent[1-True-0-200]",
+      "uid" : "9d11ff36de11b415",
+      "parentUid" : "12f8a1de31477b8035da527bcbf41670",
+      "status" : "passed",
       "time" : {
-        "start" : 1702628252734,
-        "stop" : 1702628253147,
-        "duration" : 413
+        "start" : 1709104102674,
+        "stop" : 1709104102753,
+        "duration" : 79
       },
       "flaky" : false,
-      "parameters" : [ "{'size': 10, 'current': 1, 'query': {'isAll': True}}", "0", "True" ]
-    }, {
-      "name" : "test_get_all_agent_info[data1-True-0]",
-      "uid" : "33432621122a23c8",
-      "parentUid" : "20b160e69b4703a3568bceb2501bc8d9",
-      "status" : "failed",
-      "time" : {
-        "start" : 1702628253506,
-        "stop" : 1702628253807,
-        "duration" : 301
-      },
-      "flaky" : false,
-      "parameters" : [ "{'size': 20, 'current': 2, 'query': {'isAll': True}}", "0", "True" ]
+      "parameters" : [ "0", "True", "200", "'1'" ]
     } ],
-    "uid" : "testcases.api_test.test_agent_info"
+    "uid" : "testcases.api_test.agent.test_agent"
   } ]
 }

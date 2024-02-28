@@ -4,7 +4,7 @@ import os
 # from common.mysql_operate import db
 from common.read_data import data
 from common.logger import logger
-from common.util import generate_phone_number
+from common.util import generate_phone_number, get_dynamic_headers
 from operation.user import get_code,login
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -47,13 +47,31 @@ scenario_data = get_data("scenario_test_data.yml")
 #     logger.info("前置步骤 ==>> 管理员 {} 登录，返回信息 为：{}".format(username, password))
 
 
-@pytest.fixture(scope="session")
+# @pytest.fixture(scope="session")
 def login_fixture():
     phone = generate_phone_number()
     result = get_code(phone)
     code = result.data
     result = login(phone,code)
     return result.data
+
+
+# token = login_fixture()
+
+@pytest.fixture()
+def get_header_fixture():
+    '''
+    获取动态的header
+    '''
+    dynamic_headers =get_dynamic_headers()
+    headers = {
+        "CLIENT-TOC":"Y",
+        "Authorization":token,
+        "abc12":dynamic_headers["abc12"],
+        "aee":dynamic_headers["aee"],
+        "timeStamp":dynamic_headers["timeStamp"]
+    }
+    return headers
 
 
 # @pytest.fixture(scope="function")

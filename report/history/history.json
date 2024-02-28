@@ -1,41 +1,20 @@
 {
-  "505f91295bbfb2a107a2ccf3d3869d17" : {
+  "ae0aaf6914fbd8a94d0ec381405d9a95" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "20630a7bd3ea9c20",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: 接口返回码是 【 1 】, 返回信息：请求过于频繁，请稍后后再试！ \nassert False == True\n  -False\n  +True",
+      "uid" : "9d11ff36de11b415",
+      "status" : "passed",
       "time" : {
-        "start" : 1702628252734,
-        "stop" : 1702628253147,
-        "duration" : 413
-      }
-    } ]
-  },
-  "09f42aef0a0fe7fdd28bf1bd3371a196" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "33432621122a23c8",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: 接口返回码是 【 1 】, 返回信息：请求过于频繁，请稍后后再试！ \nassert False == True\n  -False\n  +True",
-      "time" : {
-        "start" : 1702628253506,
-        "stop" : 1702628253807,
-        "duration" : 301
+        "start" : 1709104102674,
+        "stop" : 1709104102753,
+        "duration" : 79
       }
     } ]
   }

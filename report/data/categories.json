@@ -1,37 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: 接口返回码是 【 1 】, 返回信息：请求过于频繁，请稍后后再试！ \nassert False == True\n  -False\n  +True",
-      "children" : [ {
-        "name" : "test_get_all_agent_info[data0-True-0]",
-        "uid" : "20630a7bd3ea9c20",
-        "parentUid" : "180e584f3a5f45577963f75e303a1ce7",
-        "status" : "failed",
-        "time" : {
-          "start" : 1702628252734,
-          "stop" : 1702628253147,
-          "duration" : 413
-        },
-        "flaky" : false,
-        "parameters" : [ "{'size': 10, 'current': 1, 'query': {'isAll': True}}", "0", "True" ]
-      }, {
-        "name" : "test_get_all_agent_info[data1-True-0]",
-        "uid" : "33432621122a23c8",
-        "parentUid" : "180e584f3a5f45577963f75e303a1ce7",
-        "status" : "failed",
-        "time" : {
-          "start" : 1702628253506,
-          "stop" : 1702628253807,
-          "duration" : 301
-        },
-        "flaky" : false,
-        "parameters" : [ "{'size': 20, 'current': 2, 'query': {'isAll': True}}", "0", "True" ]
-      } ],
-      "uid" : "180e584f3a5f45577963f75e303a1ce7"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }

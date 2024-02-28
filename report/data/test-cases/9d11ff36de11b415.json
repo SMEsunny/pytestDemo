@@ -1,0 +1,110 @@
+{
+  "uid" : "9d11ff36de11b415",
+  "name" : "test_init_agent[1-True-0-200]",
+  "fullName" : "testcases.api_test.agent.test_agent.Test_agent#test_init_agent",
+  "historyId" : "ae0aaf6914fbd8a94d0ec381405d9a95",
+  "time" : {
+    "start" : 1709104102674,
+    "stop" : 1709104102753,
+    "duration" : 79
+  },
+  "description" : "该用例初始化智能体接口的测试",
+  "descriptionHtml" : "<p>该用例初始化智能体接口的测试</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_header_fixture",
+    "time" : {
+      "start" : 1709104102673,
+      "stop" : 1709104102673,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "该用例初始化智能体接口的测试",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "110247a1e1812ea4",
+      "name" : "log",
+      "source" : "110247a1e1812ea4.txt",
+      "type" : "text/plain",
+      "size" : 1326
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例-初始化智能体"
+  }, {
+    "name" : "feature",
+    "value" : "获取agent模块接口"
+  }, {
+    "name" : "epic",
+    "value" : "测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.api_test.agent"
+  }, {
+    "name" : "suite",
+    "value" : "test_agent"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_agent"
+  }, {
+    "name" : "host",
+    "value" : "SKY-20151030HPK"
+  }, {
+    "name" : "thread",
+    "value" : "10564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.api_test.agent.test_agent"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "except_code",
+    "value" : "0"
+  }, {
+    "name" : "except_result",
+    "value" : "True"
+  }, {
+    "name" : "status_code",
+    "value" : "200"
+  }, {
+    "name" : "type",
+    "value" : "'1'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9d11ff36de11b415.json",
+  "parameterValues" : [ "0", "True", "200", "'1'" ]
+}

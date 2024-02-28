@@ -1,7 +1,12 @@
 import sys
 import common.logger
+import os 
 
-class TestA:
-    
-    def test_a(self):
-        print(111)
+
+
+def func():
+    print(os.path.realpath(__file__))
+    print(os.path.dirname(os.path.realpath(__file__)))
+    print(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+    print(os.getcwd())
+func()

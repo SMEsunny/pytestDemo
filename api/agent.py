@@ -15,5 +15,9 @@ class Agent(RestClient):
     def list_all_agents(self, **kwargs):
         return self.post("/api/bbs/front/agent/info/square/page/list", **kwargs)
     
+    
+    def init_agent(self, **kwargs):
+        return self.post("/api/bbs/front/agent/info/init/1", **kwargs)    
+    
 
 agent = Agent(api_root_url)
